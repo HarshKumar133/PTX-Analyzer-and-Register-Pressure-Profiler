@@ -1,0 +1,6 @@
+/build*/
+*.ptx.tmp
+*.json.tmp
+.DS_Store
+Skills/
+InformationNeeded.txt

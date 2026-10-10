@@ -1,0 +1,14 @@
+.version 7.0
+.target sm_70
+.entry choose() {
+    .reg .pred %p0;
+    .reg .b32 %r0, %r1, %r2;
+    setp.eq.s32 %p0, %r0, 0;
+    @%p0 bra TAKE_A;
+    mov.b32 %r2, %r1;
+    bra EXIT;
+TAKE_A:
+    mov.b32 %r2, 7;
+EXIT:
+    ret;
+}

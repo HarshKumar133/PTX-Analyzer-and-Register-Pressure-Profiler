@@ -1,0 +1,4 @@
+.version 7.0
+.target sm_70
+.entry main_kernel() { .reg .b32 %r0; mov.u32 %r0, 5; ret; }
+.func helper() { .reg .b32 %r1; mov.u32 %r1, 2; ret; }
